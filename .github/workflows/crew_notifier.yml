@@ -2,9 +2,9 @@ name: Daily Crew Certification Check
 
 on:
   schedule:
-    # Runs at 19:25 IST (13:55 UTC) or your desired schedule
+    # Runs at your desired schedule, e.g., 13:55 UTC
     - cron: '55 13 * * *'
-  # Allows you to run this workflow manually from the Actions tab
+  # Allows you to run this workflow manually for testing
   workflow_dispatch:
 
 jobs:
@@ -24,13 +24,9 @@ jobs:
       run: pip install -r requirements.txt
 
     # ========== MODIFICATION START ==========
-    # This is the new, more reliable way to create the credentials file
-    - name: Create Firebase credentials file
-      id: create_json
-      uses: jsdaniell/create-json@v1.2.2
-      with:
-        name: "serviceAccountKey.json"
-        json: ${{ secrets.FIREBASE_CREDENTIALS }}
+    # This new step decodes the Base64 secret back into the JSON file
+    - name: Create Firebase credentials from Base64
+      run: echo "${{ secrets.FIREBASE_CREDENTIALS }}" | base64 --decode > serviceAccountKey.json
     # ========== MODIFICATION END ==========
 
     - name: Run the Python script
