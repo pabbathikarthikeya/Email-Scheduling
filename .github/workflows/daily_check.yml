@@ -2,8 +2,9 @@ name: Daily Crew Certification Check
 
 on:
   schedule:
-    # Runs at your desired schedule
-    - cron: '55 13 * * *'
+    # Runs at 21:35 IST (16:05 UTC)
+    - cron: '5 16 * * *'
+  # Allows you to run this workflow manually for testing
   workflow_dispatch:
 
 jobs:
@@ -32,5 +33,4 @@ jobs:
         SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
         SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
-        # ========== ADD THIS LINE ==========
         CREW_DATA_PATH: 'erp/data/shipping/fleet_management/crew-profile'
