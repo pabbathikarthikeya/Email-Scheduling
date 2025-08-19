@@ -25,18 +25,17 @@ jobs:
     - name: Create Firebase credentials from Base64
       run: echo "${{ secrets.FIREBASE_CREDENTIALS }}" | base64 --decode > serviceAccountKey.json
 
-    # ========== NEW DEBUGGING STEP ==========
+    # This is the crucial debugging step that was missing
     - name: Verify created credentials file
       run: |
         echo "Verifying the contents of serviceAccountKey.json..."
-        # This command checks the file size. If it's 0, the file is empty.
+        # This command checks the file size.
         ls -l serviceAccountKey.json
         echo "---"
         # This command will show the first few lines of the file.
         echo "First 5 lines of the file:"
         head -n 5 serviceAccountKey.json
         echo "---"
-    # ========== END OF DEBUGGING STEP ==========
 
     - name: Run the Python script
       run: python crew_notifier.py
