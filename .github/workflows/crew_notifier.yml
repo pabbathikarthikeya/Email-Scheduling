@@ -2,9 +2,8 @@ name: Daily Crew Certification Check
 
 on:
   schedule:
-    # Runs at your desired schedule, e.g., 13:55 UTC
+    # Runs at your desired schedule
     - cron: '55 13 * * *'
-  # Allows you to run this workflow manually for testing
   workflow_dispatch:
 
 jobs:
@@ -23,11 +22,21 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt
 
-    # ========== MODIFICATION START ==========
-    # This new step decodes the Base64 secret back into the JSON file
     - name: Create Firebase credentials from Base64
       run: echo "${{ secrets.FIREBASE_CREDENTIALS }}" | base64 --decode > serviceAccountKey.json
-    # ========== MODIFICATION END ==========
+
+    # ========== NEW DEBUGGING STEP ==========
+    - name: Verify created credentials file
+      run: |
+        echo "Verifying the contents of serviceAccountKey.json..."
+        # This command checks the file size. If it's 0, the file is empty.
+        ls -l serviceAccountKey.json
+        echo "---"
+        # This command will show the first few lines of the file.
+        echo "First 5 lines of the file:"
+        head -n 5 serviceAccountKey.json
+        echo "---"
+    # ========== END OF DEBUGGING STEP ==========
 
     - name: Run the Python script
       run: python crew_notifier.py
