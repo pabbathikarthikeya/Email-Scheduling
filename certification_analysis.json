@@ -1,0 +1,830 @@
+{
+    "georgemarivic1977@gmail.com": {
+        "valid": [
+            {
+                "document_certificate": "Seaman's Book (Philippine)",
+                "document_number": "A0084047",
+                "expiry_date": "03-Jul-2030",
+                "gdrive": "1p2ct7l2xpJAagVn5b-fXg4vBEqljaj8A",
+                "grade": "",
+                "issued_on": "03-Jul-2020",
+                "no": 1,
+                "place_of_issue": "PHILIPPINES"
+            },
+            {
+                "document_certificate": "PASSPORT",
+                "document_number": "P4826014B",
+                "expiry_date": "14-Feb-2030",
+                "grade": "",
+                "issued_on": "15-Feb-2020",
+                "no": 2,
+                "place_of_issue": "DFA NCR CENTRAL"
+            },
+            {
+                "document_certificate": "U.S. Visa",
+                "document_number": "T5079656",
+                "expiry_date": "01-Jan-2034",
+                "grade": "C1/D",
+                "issued_on": "08-Jan-2024",
+                "no": 3,
+                "place_of_issue": "PHILIPPINES"
+            },
+            {
+                "document_certificate": "MARINA COC",
+                "document_number": "GOC200012155625",
+                "expiry_date": "11-Jan-2030",
+                "grade": "",
+                "issued_on": "11-Jan-2025",
+                "no": 4,
+                "place_of_issue": "REPUBLIC OF THE PHILIPPINES"
+            },
+            {
+                "document_certificate": "MARINA COC",
+                "document_number": "COICNW200007678025",
+                "expiry_date": "11-Jan-2030",
+                "grade": "OIC - NW",
+                "issued_on": "11-Jan-2025",
+                "no": 5,
+                "place_of_issue": "REPUBLIC OF THE PHILIPPINES"
+            },
+            {
+                "document_certificate": "Basic Training COP",
+                "document_number": "BT200108344625",
+                "expiry_date": "11-Jan-2030",
+                "grade": "",
+                "issued_on": "11-Jan-2025",
+                "no": 7,
+                "place_of_issue": "REPUBLIC OF THE PHILIPPINES"
+            },
+            {
+                "document_certificate": "Proficiency In Survival Craft And Rescue Boat (COP)",
+                "document_number": "SCRB200030415725",
+                "expiry_date": "11-Jan-2030",
+                "grade": "",
+                "issued_on": "11-Jan-2025",
+                "no": 9,
+                "place_of_issue": "PHILIPPINES"
+            },
+            {
+                "document_certificate": "Advance Fire Fighting COP",
+                "document_number": "AFF200034069725",
+                "expiry_date": "11-Jan-2030",
+                "grade": "",
+                "issued_on": "11-Jan-2025",
+                "no": 10,
+                "place_of_issue": "MANILA"
+            },
+            {
+                "document_certificate": "PANAMA CERTIFICATE (LICENSE)",
+                "document_number": "-",
+                "expiry_date": "11-Jan-2030",
+                "grade": "",
+                "issued_on": "",
+                "no": 44,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "PANAMA BOOKLET (GMOSS)",
+                "document_number": "-",
+                "expiry_date": "11-Jan-2030",
+                "grade": "",
+                "issued_on": "",
+                "no": 45,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "PANAMA CERTIFICATE (GMOSS)",
+                "document_number": "-",
+                "expiry_date": "11-Jan-2030",
+                "grade": "",
+                "issued_on": "",
+                "no": 48,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "PANAMA ENDORSEMENT or RECEIPT (SDSD)",
+                "document_number": "-",
+                "expiry_date": "11-Jan-2030",
+                "grade": "",
+                "issued_on": "",
+                "no": 50,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "Seafarer's Identity Document",
+                "document_number": "200034099",
+                "expiry_date": "07-Jan-2030",
+                "grade": "",
+                "issued_on": "07-Jan-2025",
+                "no": 87,
+                "place_of_issue": "PHILIPPINES"
+            },
+            {
+                "document_certificate": "MARITIME CREW VISA",
+                "document_number": "2009579965005",
+                "expiry_date": "20-Mar-2028",
+                "grade": "",
+                "issued_on": "25-Jan-2023",
+                "no": 88,
+                "place_of_issue": "AUSTRALIA"
+            }
+        ],
+        "expired": [
+            {
+                "document_certificate": "MARINA COE",
+                "document_number": "EOICNW200001846420",
+                "expiry_date": "03-Aug-2025",
+                "grade": "",
+                "issued_on": "03-Aug-2020",
+                "no": 6,
+                "place_of_issue": "REPUBLIC OF THE PHILIPPINES"
+            },
+            {
+                "document_certificate": "PANAMA ENDORSEMENT or RECEIPT (PSCRB)",
+                "document_number": "-",
+                "expiry_date": "28-Feb-2024",
+                "grade": "",
+                "issued_on": "",
+                "no": 49,
+                "place_of_issue": ""
+            }
+        ],
+        "expiry_not_mentioned": [
+            {
+                "document_certificate": "MEDICAL EMERGENCY FIRST AID COP",
+                "document_number": "18-242548",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "10-Mar-2016",
+                "no": 8,
+                "place_of_issue": "PHILIPPINES"
+            },
+            {
+                "document_certificate": "PFRB COP",
+                "document_number": "16-12856",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "12-Apr-2013",
+                "no": 11,
+                "place_of_issue": "PHILIPPINES"
+            },
+            {
+                "document_certificate": "SHIP SECURITY AWARENESS TRAINING AND 25EARERS WITH DESIGNATED SECURITY DUTIES (COP)",
+                "document_number": "27-41088",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "19-Apr-2018",
+                "no": 12,
+                "place_of_issue": "PHILIPPINES"
+            },
+            {
+                "document_certificate": "Basic Operation Log Carrier",
+                "document_number": "BOLOG-15-02-023",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "13-Feb-2015",
+                "no": 13,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "Bridge Resource Management",
+                "document_number": "BRM-19-04-004",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "16-Apr-2019",
+                "no": 14,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "Training in Leadership and Teamwork",
+                "document_number": "TILT-17-06-025",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "08-Jun-2017",
+                "no": 15,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "Ship Handling and Maneuvering Simulator",
+                "document_number": "SHMS-15-03-003",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "11-Mar-2015",
+                "no": 16,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "NAV9000 Awareness Course",
+                "document_number": "NAVA-23-01-009",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "25-Jan-2023",
+                "no": 17,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "Environmental Save Bunker Course",
+                "document_number": "ESBC-14-09-020",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "03-Oct-2014",
+                "no": 18,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "Bassnet 2.8 Maintenance",
+                "document_number": "BNMT-16-04-003",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "15-Apr-2016",
+                "no": 19,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "Maritime Labour Convention 2006 Awareness Seminar",
+                "document_number": "MLCS-14-09-002",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "17-Sep-2014",
+                "no": 20,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "Maritime Leadership and Teamwork",
+                "document_number": "MALT-24-01-022",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "26-Jan-2024",
+                "no": 21,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "Vessel General Permit Course",
+                "document_number": "VGPC-16-03-022",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "15-Mar-2016",
+                "no": 22,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "K-Line Safety Requirements",
+                "document_number": "KLIR-22-11-012",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "17-Nov-2022",
+                "no": 23,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "Anchor Handling Seminar",
+                "document_number": "AHS-BO6-201605-13",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "27-May-2016",
+                "no": 24,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "Free Fall Life Boat Lecture",
+                "document_number": "FFL-16-05-006",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "24-May-2016",
+                "no": 25,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "Cyber Security Management Manual Awareness",
+                "document_number": "CSMMA-25-03-020",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "28-Mar-2025",
+                "no": 26,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "Cyber Security Officer Training (Lecture & Actual)",
+                "document_number": "CSOT-24-01-004",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "15-Jan-2024",
+                "no": 27,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "BALLASTING/DEBALLASTING OPERATION COURSE",
+                "document_number": "BDOC-14-10-006",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "23-Oct-2014",
+                "no": 28,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "TRAINING IN CRITICAL SITUATION",
+                "document_number": "TICS-16-05-003",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "13-May-2016",
+                "no": 29,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "MARITIME SECURITY AWARENESS",
+                "document_number": "MSC1011366",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "23-Nov-2010",
+                "no": 30,
+                "place_of_issue": "MANILA"
+            },
+            {
+                "document_certificate": "Basic Operation Bulk Carrier",
+                "document_number": "BOBC-15-03-003",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "06-Mar-2015",
+                "no": 31,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "MARPOL 73/78 ANNEX I, II, III, IV, V & VI",
+                "document_number": "MAIVI1301077",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "11-Jan-2013",
+                "no": 32,
+                "place_of_issue": "MANILA"
+            },
+            {
+                "document_certificate": "Basic Operation for Woodchip Carrier",
+                "document_number": "BOWC-15-02-010",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "17-Feb-2015",
+                "no": 33,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "Ship Maintenance and Management System (LAUREL)",
+                "document_number": "SMMS-25-02-025",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "28-Feb-2025",
+                "no": 34,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "Maritime Risk Management",
+                "document_number": "MRM-16-05-007",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "02-Jun-2016",
+                "no": 35,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "Port State Control Course Training",
+                "document_number": "PSCT-23-01-043",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "24-Jan-2023",
+                "no": 36,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "COLLISION REGULATION",
+                "document_number": "COLREG-19-04-005",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "17-Apr-2019",
+                "no": 37,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "SAFETY MANAGEMENT SYSTEM (LAUREL)",
+                "document_number": "SMS/SSRC-14-09-003",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "12-Sep-2014",
+                "no": 38,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "DECK CRANE OPERATION COURSE",
+                "document_number": "DCOP-14-10-020",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "22-Oct-2014",
+                "no": 39,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "Safety Management System",
+                "document_number": "SMS-22-11-019",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "23-Nov-2022",
+                "no": 40,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "HAZARDOUS MATERIALS",
+                "document_number": "HAZMAT-24-02-028",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "08-Feb-2024",
+                "no": 41,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "HATCH COVER INSPECTION & MAINTENANCE TRAINING",
+                "document_number": "HIMT-24-01-049",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "24-Jan-2024",
+                "no": 42,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "SENTRY TO ENCLOSED SPACE TRAINING",
+                "document_number": "EEST-25-02-033",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "18-Feb-2025",
+                "no": 43,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "SINGAPORE License COE - MPA",
+                "document_number": "COE-D0206992",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "18-Jan-2023",
+                "no": 46,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "SINGAPORE License COE - INFOCOM",
+                "document_number": "COE-R0182094",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "18-Jan-2023",
+                "no": 47,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "PANAMA BOOKLET (LICENSE)",
+                "document_number": "-",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "19-May-2009",
+                "no": 51,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "YELLOW FEVER VACCINE",
+                "document_number": "QL 033377",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "",
+                "no": 52,
+                "place_of_issue": "MANILA"
+            },
+            {
+                "document_certificate": "POLIO VACCINE",
+                "document_number": "QQ 096593",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "",
+                "no": 53,
+                "place_of_issue": "MANILA"
+            },
+            {
+                "document_certificate": "VARICELLA VACCINE (Anti-Chickenpox)",
+                "document_number": "-",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "08-Jun-2017",
+                "no": 54,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "P E M E",
+                "document_number": "-",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "08-Apr-2025",
+                "no": 55,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "COVID-19 VACCINE",
+                "document_number": "BOORWO00127860",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "",
+                "no": 56,
+                "place_of_issue": "PFIZER"
+            },
+            {
+                "document_certificate": "PANAMA MEDICAL",
+                "document_number": "TECSISA-09443-2024",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "15-Apr-2025",
+                "no": 58,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "SINGAPORE FLAG MEDICAL CERTIFICATE",
+                "document_number": "-",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "25-Oct-2022",
+                "no": 59,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "DRUG AND ALCOHOL TEST",
+                "document_number": "-",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "24-May-2025",
+                "no": 60,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "Blood Testing",
+                "document_number": "-",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "24-Mar-2025",
+                "no": 61,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "ANTI-TETANUS VACCINE",
+                "document_number": "20016410/0",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "21-Dec-2023",
+                "no": 62,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "PRE DEPARTURE ORIENTATION SEMINAR (PDOS)",
+                "document_number": "PDOS-058.01.23",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "18-Jan-2023",
+                "no": 63,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "ANTI PIRACY AWARENESS SEMINAR (APAS)",
+                "document_number": "APAS-059-01-23",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "19-Jan-2023",
+                "no": 64,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "Registration Number (POEA)",
+                "document_number": "2018052503260'",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "17-Feb-2021",
+                "no": 65,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "CHECKLIST OF DOCUMENTS",
+                "document_number": "-",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "",
+                "no": 66,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "Document Checklist (Laurel)",
+                "document_number": "-",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "",
+                "no": 67,
+                "place_of_issue": "MAKATI"
+            },
+            {
+                "document_certificate": "Company Policy",
+                "document_number": "-",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "04-Apr-2024",
+                "no": 68,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "Basic Training",
+                "document_number": "BT-R-203294AM",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "27-Jun-2020",
+                "no": 69,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "Proficiency In Survival Craft And Rescue Boats Training",
+                "document_number": "R-PSCRB-202483AM",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "01-Jul-2020",
+                "no": 70,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "MEDICAL EMERGENCY FIRST AID",
+                "document_number": "MF1212040",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "20-Dec-2012",
+                "no": 71,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "GLOBAL MARITIME DISTRESS AND SAFETY SYSTEM",
+                "document_number": "GM1302022",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "01-Feb-2013",
+                "no": 72,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "ECDIS (2010 Amendment)",
+                "document_number": "ECDIS-190277AM",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "27-Apr-2019",
+                "no": 73,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "PFRB",
+                "document_number": "FRB-13813-12",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "06-Mar-2013",
+                "no": 74,
+                "place_of_issue": "MANILA"
+            },
+            {
+                "document_certificate": "JRC 901B ECDIS",
+                "document_number": "ECDIS(J)-15-03-001",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "04-Mar-2015",
+                "no": 75,
+                "place_of_issue": "MAKATI CITY"
+            },
+            {
+                "document_certificate": "JRC 7201/9201 ECDIS (New Model)",
+                "document_number": "ECDISJRC2-NM 20251601-10RT",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "22-Apr-2025",
+                "no": 76,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "FURUNO FEA Ecdis Type Specific",
+                "document_number": "CTE27246",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "19-Jun-2017",
+                "no": 77,
+                "place_of_issue": "DENMARK"
+            },
+            {
+                "document_certificate": "FURUNO FMD ECDIS Type Specific",
+                "document_number": "CTE36550",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "26-Apr-2019",
+                "no": 78,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "TOKYO KEIKI ECDIS Type Specific",
+                "document_number": "OLTTK20224902-02",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "12-Dec-2022",
+                "no": 79,
+                "place_of_issue": "MANILA"
+            },
+            {
+                "document_certificate": "Promotion Program (SSSI)",
+                "document_number": "PPRD-24-02-007",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "20-Feb-2024",
+                "no": 80,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "Advanced Fire Fighting",
+                "document_number": "R-ATFF-20130AM",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "08-Jul-2020",
+                "no": 81,
+                "place_of_issue": "MANILA"
+            },
+            {
+                "document_certificate": "SDSD TRAINING CERTIFICATE",
+                "document_number": "SATSDSD041/1804/07",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "14-Apr-2018",
+                "no": 82,
+                "place_of_issue": "MANILA"
+            },
+            {
+                "document_certificate": "FREE-FALL LIFEBOAT ACTUAL",
+                "document_number": "FFLB-W21-2016-B21AM-MA-15470-7641",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "28-May-2016",
+                "no": 83,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "OLC - F1",
+                "document_number": "OLCA-DF1-160358AM",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "23-Feb-2016",
+                "no": 84,
+                "place_of_issue": "MANILA"
+            },
+            {
+                "document_certificate": "OLC - F3",
+                "document_number": "OLCA-DF3-160369AM",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "26-Feb-2016",
+                "no": 85,
+                "place_of_issue": "MANILA"
+            },
+            {
+                "document_certificate": "OEC",
+                "document_number": "2025058932016",
+                "expiry_date": "",
+                "grade": "SECOND OFFICER",
+                "issued_on": "27-May-2025",
+                "no": 86,
+                "place_of_issue": "PHILIPPINES"
+            },
+            {
+                "document_certificate": "CONTRACT (INITIAL)",
+                "document_number": "-",
+                "expiry_date": "",
+                "grade": "SECOND MATE",
+                "issued_on": "27-May-2025",
+                "no": 89,
+                "place_of_issue": "PHILIPPINES"
+            },
+            {
+                "document_certificate": "SIRB SEA SERVICE RECORDS",
+                "document_number": "-",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "",
+                "no": 90,
+                "place_of_issue": ""
+            },
+            {
+                "document_certificate": "SIRB POEA STAMP (current vessel)",
+                "document_number": "A0084047",
+                "expiry_date": "",
+                "grade": "",
+                "issued_on": "27-Feb-2024",
+                "no": 91,
+                "place_of_issue": "MANILA"
+            },
+            {
+                "document_certificate": "CHINESE VISA",
+                "document_number": "AG276293",
+                "expiry_date": "",
+                "grade": "SECOND OFFICER",
+                "issued_on": "27-May-2025",
+                "no": 92,
+                "place_of_issue": ""
+            }
+        ]
+    }
+}
