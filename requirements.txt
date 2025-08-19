@@ -1,0 +1,4 @@
+firebase-admin
+google-generativeai
+sendgrid
+python-dotenv
