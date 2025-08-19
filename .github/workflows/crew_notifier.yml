@@ -1,0 +1,35 @@
+name: Daily Crew Certification Check
+
+on:
+  schedule:
+    # Runs at 19:25 IST (13:55 UTC)
+    - cron: '55 13 * * *'
+  # This line allows you to run the workflow manually for testing
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - name: Create Firebase credentials file
+      run: echo "${{ secrets.FIREBASE_CREDENTIALS }}" > serviceAccountKey.json
+
+    - name: Run the Python script
+      run: python crew_notifier.py
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
