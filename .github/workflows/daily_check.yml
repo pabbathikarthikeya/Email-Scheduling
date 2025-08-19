@@ -25,18 +25,6 @@ jobs:
     - name: Create Firebase credentials from Base64
       run: echo "${{ secrets.FIREBASE_CREDENTIALS }}" | base64 --decode > serviceAccountKey.json
 
-    # This is the crucial debugging step that was missing
-    - name: Verify created credentials file
-      run: |
-        echo "Verifying the contents of serviceAccountKey.json..."
-        # This command checks the file size.
-        ls -l serviceAccountKey.json
-        echo "---"
-        # This command will show the first few lines of the file.
-        echo "First 5 lines of the file:"
-        head -n 5 serviceAccountKey.json
-        echo "---"
-
     - name: Run the Python script
       run: python crew_notifier.py
       env:
@@ -44,3 +32,5 @@ jobs:
         SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
         SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+        # ========== ADD THIS LINE ==========
+        CREW_DATA_PATH: 'erp/data/shipping/fleet_management/crew-profile'
