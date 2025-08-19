@@ -12,23 +12,22 @@ from dotenv import load_dotenv
 # --- ⚙️ CONFIGURATION ---
 # ==============================================================================
 
-# This loads environment variables from a .env file for local testing
 load_dotenv() 
 
 # 1. Firebase Configuration
 CRED_PATH = 'serviceAccountKey.json'
 DATABASE_URL = os.getenv('DATABASE_URL')
 CREW_DATA_PATH = os.getenv('CREW_DATA_PATH')
-DATE_FORMAT = '%d-%b-%Y' # e.g., '19-Aug-2025'
+DATE_FORMAT = '%d-%b-%Y'
 
-# 2. API Keys (loaded from environment variables)
+# 2. API Keys
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
 
 # 3. Email Configuration
 SENDER_EMAIL = os.getenv("SENDER_EMAIL") 
 
-# 4. Output File for the analysis report
+# 4. Output File
 OUTPUT_FILE = 'certification_analysis_report.json'
 
 # ==============================================================================
@@ -54,7 +53,6 @@ def send_email(to_email, subject, body):
     if not SENDGRID_API_KEY:
         print("❌ ERROR: SendGrid API key not configured.")
         return False
-    # Convert newlines to HTML breaks for better email formatting
     html_body = body.replace('\n', '<br>')
     message = Mail(
         from_email=SENDER_EMAIL,
@@ -75,12 +73,11 @@ def send_email(to_email, subject, body):
         return False
 
 # ==============================================================================
-# --- 🔥 MAIN SCRIPT LOGIC ---
+# --- 🔥 MAIN SCRIPT LOGIC (Simplified) ---
 # ==============================================================================
 
 def analyze_and_notify_crew():
-    """Main function to run the analysis and smart notification process."""
-    # --- 1. Initialize Firebase ---
+    """Main function to run the analysis and simple notification process."""
     if not firebase_admin._apps:
         try:
             cred = credentials.Certificate(CRED_PATH)
@@ -89,7 +86,6 @@ def analyze_and_notify_crew():
             print(f"❌ Firebase Initialization Error: {e}")
             return
 
-    # --- 2. Fetch Crew Data ---
     print("Fetching crew data from Firebase...")
     crew_ref = db.reference(CREW_DATA_PATH)
     all_crew_data = crew_ref.get()
@@ -97,10 +93,9 @@ def analyze_and_notify_crew():
         print(f"⚠️ No crew data found at path: {CREW_DATA_PATH}")
         return
 
-    # --- 3. Analyze and Process Each Crew Member ---
     now = datetime.now()
     analysis_results = {}
-    print("Starting analysis and smart notification process...")
+    print("Starting analysis and notification process...")
 
     for crew_id, crew_data in all_crew_data.items():
         personal_details = crew_data.get('personal_details', {})
@@ -113,7 +108,7 @@ def analyze_and_notify_crew():
         
         print(f"\n--- Processing: {name} ({email}) ---")
 
-        expired_certs_to_notify = []
+        expired_certs = []
         documents = crew_data.get('documents')
         if not documents:
             print(f"ℹ️ Skipping {name}: No documents found.")
@@ -123,64 +118,36 @@ def analyze_and_notify_crew():
             if not isinstance(doc, dict): continue
             
             expiry_date_str = doc.get('expiry_date')
-            doc_number = doc.get('document_number')
-            
-            # Check if the certificate is expired
-            is_expired = False
             if expiry_date_str:
                 try:
                     if datetime.strptime(expiry_date_str, DATE_FORMAT) < now:
-                        is_expired = True
+                        expired_certs.append(doc)
                 except (ValueError, TypeError):
-                    continue # Skip malformed dates
-
-            if is_expired:
-                # This is the "smart" part: check if we already sent a notification
-                if not doc_number:
-                    print(f"⚠️ Skipping expired doc '{doc.get('document_certificate')}' for {name}: No document number to track notification status.")
                     continue
 
-                # Create a safe ID for the Firebase path
-                safe_doc_number = doc_number.replace('.', '_').replace('/', '_').replace('#', '_')
-                notification_id = f"EXPIRED_{safe_doc_number}"
-                log_ref = db.reference(f"{CREW_DATA_PATH}/{crew_id}/notification_log/{notification_id}")
-
-                if log_ref.get() is None:
-                    print(f"✅ NEW expired cert found for {name}: {doc.get('document_certificate')}")
-                    expired_certs_to_notify.append(doc)
-                else:
-                    print(f"ℹ️ Skipping email for {name}: Notification for {doc.get('document_certificate')} already sent.")
-
-        # --- 4. Generate a single prompt for all new expired certs and send email ---
-        if expired_certs_to_notify:
+        if expired_certs:
             subject = "Urgent: Action Required on Expired Certifications"
-            expired_list = "\n".join([f"- {d.get('document_certificate', 'Unknown')} (Expired on {d.get('expiry_date', 'N/A')})" for d in expired_certs_to_notify])
+            expired_list = "\n".join([f"- {d.get('document_certificate', 'Unknown')} (Expired on {d.get('expiry_date', 'N/A')})" for d in expired_certs])
             
             prompt = f"""
             Write a professional and helpful email to our crew member, {name}.
             The email must clearly state that some of their documents have expired and require urgent attention.
             Maintain a supportive tone and instruct them to contact the crewing department for assistance with renewal.
-
             List the expired documents clearly under a heading 'Urgent: Expired Documents'. Here is the list:
             {expired_list}
             """
             
             email_body = generate_email_body(prompt.strip())
             
-            if email_body and send_email(email, subject, email_body):
-                # If email is sent successfully, log it in Firebase for each document
-                for doc in expired_certs_to_notify:
-                    doc_number = doc.get('document_number')
-                    safe_doc_number = doc_number.replace('.', '_').replace('/', '_').replace('#', '_')
-                    notification_id = f"EXPIRED_{safe_doc_number}"
-                    log_ref = db.reference(f"{CREW_DATA_PATH}/{crew_id}/notification_log/{notification_id}")
-                    log_ref.set(datetime.now().strftime("%Y-%m-%d"))
-                print(f"Successfully logged notifications for {name}.")
-            else:
-                print(f"❌ Failed to send email to {name}. Notification will be attempted again on next run.")
+            if email_body:
+                if send_email(email, subject, email_body):
+                    print(f"✅ Email successfully sent to {name} ({email})")
+                else:
+                    print(f"❌ Failed to send email to {name}.")
+        else:
+            print(f"ℹ️ No expired certifications found for {name}.")
 
     print("\n✅ Process complete!")
-
 
 # ==============================================================================
 # --- 🚀 RUN THE SCRIPT ---
