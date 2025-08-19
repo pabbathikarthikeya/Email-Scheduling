@@ -2,9 +2,9 @@ name: Daily Crew Certification Check
 
 on:
   schedule:
-    # Runs at 19:25 IST (13:55 UTC)
+    # Runs at 19:25 IST (13:55 UTC) or your desired schedule
     - cron: '55 13 * * *'
-  # This line allows you to run the workflow manually for testing
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
@@ -23,8 +23,15 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt
 
+    # ========== MODIFICATION START ==========
+    # This is the new, more reliable way to create the credentials file
     - name: Create Firebase credentials file
-      run: echo "${{ secrets.FIREBASE_CREDENTIALS }}" > serviceAccountKey.json
+      id: create_json
+      uses: jsdaniell/create-json@v1.2.2
+      with:
+        name: "serviceAccountKey.json"
+        json: ${{ secrets.FIREBASE_CREDENTIALS }}
+    # ========== MODIFICATION END ==========
 
     - name: Run the Python script
       run: python crew_notifier.py
